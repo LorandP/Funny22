@@ -12,7 +12,6 @@ public class Application {
     private String has22(int[] nums) {
         String true_result = String.valueOf(true);
         String false_result = String.valueOf(false);
-        int check = 0;
         int previous_number = 0;
 
         if (nums == null || nums.length == 0)
