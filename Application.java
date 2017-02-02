@@ -5,6 +5,7 @@ public class Application {
 
     /**
      * This method verifies if the array contains a 2 next to a 2 somewhere.
+     *
      * @param nums the array.
      * @return true if it has found the pair or false if it didn't.
      */
@@ -19,19 +20,16 @@ public class Application {
 
         for (int counter = 0; counter < nums.length; counter++) {
             if (previous_number == 2 && nums[counter] == 2)
-                check = 1;
+                return true_result;
             previous_number = nums[counter];
         }
-        if (check == 1)
-            return true_result;
-        else
-            return false_result;
+
+        return false_result;
     }
 
-    public static void main(String []args)
-    {
+    public static void main(String[] args) {
         Application application = new Application();
-        int[] nums = {1,2,2};
+        int[] nums = {2,1,2};
 
         System.out.println(application.has22(nums));
     }
