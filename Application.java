@@ -9,8 +9,8 @@ public class Application {
      * @return true if it has found the pair or false if it didn't.
      */
     private String has22(int[] nums) {
-        String True = String.valueOf(true);
-        String False = String.valueOf(false);
+        String true_result = String.valueOf(true);
+        String false_result = String.valueOf(false);
         int check = 0;
         int previous_number = 0;
 
@@ -23,9 +23,9 @@ public class Application {
             previous_number = nums[counter];
         }
         if (check == 1)
-            return True;
+            return true_result;
         else
-            return False;
+            return false_result;
     }
 
     public static void main(String []args)
