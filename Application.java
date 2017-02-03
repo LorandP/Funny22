@@ -10,20 +10,20 @@ public class Application {
      * @return true if it has found the pair or false if it didn't.
      */
     private String has22(int[] nums) {
-        String true_result = String.valueOf(true);
-        String false_result = String.valueOf(false);
-        int previous_number = 0;
+        String trueResult = String.valueOf(true);
+        String falseResult = String.valueOf(false);
+        int previousNumber = 0;
 
         if (nums == null || nums.length == 0)
             return "You have provided a null or empty array.";
 
         for (int counter = 0; counter < nums.length; counter++) {
-            if (previous_number == 2 && nums[counter] == 2)
-                return true_result;
-            previous_number = nums[counter];
+            if (previousNumber == 2 && nums[counter] == 2)
+                return trueResult;
+            previousNumber = nums[counter];
         }
 
-        return false_result;
+        return falseResult;
     }
 
     public static void main(String[] args) {
